@@ -67,6 +67,8 @@ from . import ceval
 from . import csatqa
 from . import haerae
 from . import cmmlu
+from . import cnn_dailymail
+from . import multi_news
 
 ########################################
 # Translation tasks
@@ -335,6 +337,10 @@ TASK_REGISTRY = {
     "haerae_rc": haerae.RC,
     "haerae_rw": haerae.RW,
     "haerae_sn": haerae.SN,
+    "cnn_dailymail": cnn_dailymail.CNN_DailyMail,
+    "cnn_dailymail_short": cnn_dailymail.CNN_DailyMail_Short,
+    "multi_news": multi_news.Multi_News,
+    "multi_news_short": multi_news.Multi_News_Short,
     # Requires manual download
     # Requires manual download of data.
     # "storycloze_2016": storycloze.StoryCloze2016,
